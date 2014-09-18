@@ -34,16 +34,15 @@ public final class R {
         public static final int zedsmall=0x7f020014;
     }
     public static final class id {
-        public static final int button1=0x7f070008;
-        public static final int button10=0x7f070006;
-        public static final int button2=0x7f070009;
-        public static final int button3=0x7f070002;
-        public static final int button4=0x7f070007;
-        public static final int button5=0x7f070001;
-        public static final int button6=0x7f070000;
-        public static final int button7=0x7f070004;
-        public static final int button8=0x7f070003;
-        public static final int button9=0x7f070005;
+        public static final int aatrok=0x7f070008;
+        public static final int karma=0x7f070006;
+        public static final int kayle=0x7f070005;
+        public static final int leesin=0x7f070004;
+        public static final int lucian=0x7f070002;
+        public static final int lulu=0x7f070000;
+        public static final int syndra=0x7f070003;
+        public static final int varus=0x7f070001;
+        public static final int vladimir=0x7f070007;
     }
     public static final class integer {
         public static final int Rows=0x7f040000;
