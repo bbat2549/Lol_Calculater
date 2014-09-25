@@ -114,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/currChamp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/imageView3"
         android:contentDescription="@null"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -146,16 +146,16 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/button5"
         android:src="@android:drawable/alert_light_frame" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
+        android:layout_below="@+id/imageView2"
+        android:layout_toLeftOf="@+id/button6"
         android:src="@android:drawable/alert_light_frame" />
 
 </RelativeLayout>

@@ -101,7 +101,7 @@ public class Startscreen extends Activity {
 			public void onClick(View v) {
 				champName.setText("Varus");
 				champTitle.setText("The Arrow of Retribution");
-				Champ.setImageResource(0x7f020007);
+				Champ.setImageResource(0x7f02000f);
 				// TODO Auto-generated method stub
 						}
 		});
