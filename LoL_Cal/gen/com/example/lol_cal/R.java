@@ -43,6 +43,14 @@ public final class R {
         public static final int button7=0x7f070006;
         public static final int button8=0x7f070007;
         public static final int button9=0x7f070008;
+        public static final int currChamp=0x7f070009;
+        public static final int imageView1=0x7f07000c;
+        public static final int imageView2=0x7f07000d;
+        public static final int imageView3=0x7f07000e;
+        public static final int imageView4=0x7f07000f;
+        public static final int imageView5=0x7f070010;
+        public static final int textView1=0x7f07000a;
+        public static final int textView2=0x7f07000b;
     }
     public static final class integer {
         public static final int Rows=0x7f040000;
