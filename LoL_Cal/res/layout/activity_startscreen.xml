@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Champ2"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,80 +14,80 @@
         android:background="@drawable/karmasmall" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Champ5"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignTop="@+id/button4"
+        android:layout_alignLeft="@+id/Champ1"
+        android:layout_alignTop="@+id/Champ4"
         android:background="@drawable/leesinsmall" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/Champ6"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignTop="@+id/button4"
+        android:layout_alignLeft="@+id/Champ3"
+        android:layout_alignTop="@+id/Champ4"
         android:background="@drawable/lulusmall" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/Champ7"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/Champ4"
+        android:layout_below="@+id/Champ4"
         android:layout_marginTop="30dp"
         android:background="@drawable/varussmall" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Champ4"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/Champ2"
         android:layout_marginTop="30dp"
-        android:layout_toLeftOf="@+id/button3"
+        android:layout_toLeftOf="@+id/Champ3"
         android:background="@drawable/luciansmall" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/Champ8"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignTop="@+id/button7"
+        android:layout_alignLeft="@+id/Champ5"
+        android:layout_alignTop="@+id/Champ7"
         android:background="@drawable/syndrasmall" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/Champ9"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignTop="@+id/button7"
+        android:layout_alignLeft="@+id/Champ6"
+        android:layout_alignTop="@+id/Champ7"
         android:background="@drawable/vladimirsmall" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/Champ1"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
+        android:layout_alignBaseline="@+id/Champ2"
+        android:layout_alignBottom="@+id/Champ2"
         android:layout_marginRight="42dp"
-        android:layout_toLeftOf="@+id/button2"
+        android:layout_toLeftOf="@+id/Champ2"
         android:background="@drawable/aatroxsmall" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Champ3"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button4"
+        android:layout_above="@+id/Champ4"
         android:layout_marginLeft="42dp"
-        android:layout_toRightOf="@+id/button2"
+        android:layout_toRightOf="@+id/Champ2"
         android:background="@drawable/kaylesmall" />
 
     <ImageView
@@ -103,7 +103,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
+        android:layout_alignLeft="@+id/Champ2"
         android:layout_alignParentTop="true"
         android:contentDescription="@null"
         android:text=""
@@ -122,7 +122,7 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignLeft="@+id/Champ1"
         android:layout_below="@+id/currChamp"
         android:src="@android:drawable/alert_light_frame" />
 
@@ -130,7 +130,7 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button2"
+        android:layout_alignRight="@+id/Champ2"
         android:layout_alignTop="@+id/imageView1"
         android:src="@android:drawable/alert_light_frame" />
 
@@ -138,7 +138,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button3"
+        android:layout_alignRight="@+id/Champ3"
         android:layout_alignTop="@+id/imageView2"
         android:src="@android:drawable/alert_light_frame" />
 
@@ -146,7 +146,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/Champ2"
         android:layout_toRightOf="@+id/imageView1"
         android:src="@android:drawable/alert_light_frame" />
 
@@ -154,8 +154,8 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
+        android:layout_above="@+id/Champ2"
+        android:layout_toRightOf="@+id/Champ2"
         android:src="@android:drawable/alert_light_frame" />
 
 </RelativeLayout>
