@@ -1,27 +1,29 @@
 package com.example.lol_cal;
 
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 public class Startscreen extends Activity {
 	ImageView Champ;
 	TextView champName, champTitle;
 	Button Aatrox, Karma, Kayle, Lee, Lucian, Lulu, Syndra,
-	Varus, Vladimir;
+		   Varus, Vladimir;
 	String current_champ;
-	Activity Startscreen = this;
+	Activity startScreen = this;
 	@Override
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_startscreen);
-		champName = (TextView) findViewById(R.id.textView1);
-		champTitle = (TextView) findViewById(R.id.textView2);
+		champName = (TextView) findViewById(R.id.Heath);
+		champTitle = (TextView) findViewById(R.id.Health_Regen);
 		Champ =(ImageView) findViewById(R.id.currChamp);
 		Aatrox =(Button)findViewById(R.id.button1);	
 		Karma =(Button)findViewById(R.id.button2);	
@@ -32,12 +34,34 @@ public class Startscreen extends Activity {
 		Syndra =(Button)findViewById(R.id.button8);
 		Varus =(Button)findViewById(R.id.button7);
 		Vladimir =(Button)findViewById(R.id.button9);
-				
 		Champ = (ImageView)findViewById(R.id.currChamp);
+		
 		Aatrox.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Aatrox"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 395;
+					double Health_reg = 5.75;
+					String Mana = "Uses Health";
+					String Mana_reg = "";
+					String Range = "150(Melee)";
+					double Attack_dam = 55;
+					double Attack_speed = 0.651;
+					double Armor = 18;
+					double Magic_res = 30;
+					int Move = 345;
+					ChampscreenIntent.putExtra("Champ", "Aatrox");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
@@ -53,8 +77,30 @@ public class Startscreen extends Activity {
 		Karma.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Karma"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
-					
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 383;
+					double Health_reg = 4.7;
+					int Mana = 290;
+					double Mana_reg = 6.8;
+					String Range = "525(Ranged)";
+					double Attack_dam = 50;
+					double Attack_speed = 0.625;
+					double Armor = 14;
+					double Magic_res = 30;
+					int Move = 335;
+					ChampscreenIntent.putExtra("Champ", "Karma");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					 
+					startActivity(ChampscreenIntent);
 				}
 				else{
 					champName.setText("Karma");
@@ -69,8 +115,29 @@ public class Startscreen extends Activity {
 		Kayle.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Kayle"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
-					
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 418;
+					double Health_reg = 7;
+					int Mana = 255;
+					double Mana_reg = 6.9;
+					String Range = "125(Melee)";
+					double Attack_dam = 53.3;
+					double Attack_speed = 0.638;
+					double Armor = 21;
+					double Magic_res = 30;
+					int Move = 335;
+					ChampscreenIntent.putExtra("Champ", "Kayle");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 				}
 				else{
 					champName.setText("Kayle");
@@ -85,8 +152,29 @@ public class Startscreen extends Activity {
 		Lee.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Lee Sin"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
-					
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 428;
+					double Health_reg = 8.95;
+					String Mana = "Energy: 200";
+					String Mana_reg = "Energy Regen:";
+					String Range = "125(Melee)";
+					double Attack_dam = 55.8;
+					double Attack_speed = 0.651;
+					double Armor = 14;
+					double Magic_res = 30;
+					int Move = 335;
+					ChampscreenIntent.putExtra("Champ", "Lee Sin");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 				}
 				else{
 					champName.setText("Lee Sin");
@@ -101,7 +189,29 @@ public class Startscreen extends Activity {
 		Lucian.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Lucian"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 420;
+					double Health_reg = 5.1;
+					int Mana = 230;
+					double Mana_reg = 7;
+					String Range = "500(Ranged)";
+					int Attack_dam = 49;
+					double Attack_speed = 0.638;
+					double Armor = 19;
+					double Magic_res = 30;
+					int Move = 335;
+					ChampscreenIntent.putExtra("Champ", "Lucian");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
@@ -117,7 +227,29 @@ public class Startscreen extends Activity {
 		Lulu.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Lulu"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 415;
+					double Health_reg = 5;
+					int Mana = 200;
+					double Mana_reg = 5;
+					String Range = "550(Ranged)";
+					double Attack_dam = 44;
+					double Attack_speed = 0.625;
+					double Armor = 13;
+					double Magic_res = 30;
+					int Move = 325;
+					ChampscreenIntent.putExtra("Champ", "Lulu");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
@@ -133,7 +265,29 @@ public class Startscreen extends Activity {
 		Syndra.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Syndra"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 380;
+					double Health_reg = 5.5;
+					int Mana = 250;
+					double Mana_reg = 6.9;
+					String Range = "550(Ranged)";
+					double Attack_dam = 51;
+					double Attack_speed = 0.625;
+					double Armor = 19;
+					double Magic_res = 30;
+					int Move = 330;
+					ChampscreenIntent.putExtra("Champ", "Syndra");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
@@ -149,13 +303,35 @@ public class Startscreen extends Activity {
 		Varus.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Varus"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 400;
+					double Health_reg = 4.5;
+					int Mana = 250;
+					double Mana_reg = 6.5;
+					String Range = "575(Ranged)";
+					double Attack_dam = 46;
+					double Attack_speed = 0.658;
+					double Armor = 17.5;
+					double Magic_res = 30;
+					int Move = 330;
+					ChampscreenIntent.putExtra("Champ", "Varus");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
 					champName.setText("Varus");
-					champTitle.setText("The Arrow of Retribution");
-					Champ.setImageResource(0x7f020007);
+					champTitle.setText("The Arrow" +'\n'+"of Retribution");
+					Champ.setImageResource(0x7f02000f);
 					current_champ = "Varus";
 					// TODO Auto-generated method stub
 				}
@@ -165,7 +341,29 @@ public class Startscreen extends Activity {
 		Vladimir.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if(current_champ == "Vladimir"){
-					Toast.makeText(Startscreen, "You press this befor", Toast.LENGTH_SHORT).show();
+					Intent ChampscreenIntent = new Intent(Startscreen.this, Champscreen.class);
+					int Health = 400;
+					double Health_reg = 6;
+					String Mana = "Uses Health";
+					String Mana_reg = "";
+					String Range = "450(Ranged)";
+					double Attack_dam = 45;
+					double Attack_speed = 0.658;
+					double Armor = 16;
+					double Magic_res = 30;
+					int Move = 335;
+					ChampscreenIntent.putExtra("Champ", "Vladimir");
+					ChampscreenIntent.putExtra("Health", Health);
+					ChampscreenIntent.putExtra("Health_Reg", Health_reg);
+					ChampscreenIntent.putExtra("Mana", Mana);
+					ChampscreenIntent.putExtra("Mana_Reg", Mana_reg);
+					ChampscreenIntent.putExtra("Range", Range);
+					ChampscreenIntent.putExtra("Attack_Dam", Attack_dam);
+					ChampscreenIntent.putExtra("Attack_Speed", Attack_speed);
+					ChampscreenIntent.putExtra("Armor", Armor);
+					ChampscreenIntent.putExtra("Magic_Res", Magic_res);
+					ChampscreenIntent.putExtra("Mov_Speed", Move);
+					startActivity(ChampscreenIntent);
 					
 				}
 				else{
