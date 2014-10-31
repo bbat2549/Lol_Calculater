@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package course.examples.helloWorldWithLogin.test;
+package com.example.lol_cal.test;
 
 public final class R {
     public static final class attr {
