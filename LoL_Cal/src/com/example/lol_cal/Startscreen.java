@@ -104,7 +104,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Karma");
 					champTitle.setText("The Enlightened One");
-					Champ.setImageResource(0x7f020003);
+					Champ.setImageResource(0x7f020007);
 					current_champ = "Karma";
 					// TODO Auto-generated method stub
 				}
@@ -141,7 +141,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Kayle");
 					champTitle.setText("The Judicator");
-					Champ.setImageResource(0x7f020005);
+					Champ.setImageResource(0x7f020009);
 					current_champ = "Kayle";
 					// TODO Auto-generated method stub
 				}
@@ -178,7 +178,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Lee Sin");
 					champTitle.setText("The Blind Monk");
-					Champ.setImageResource(0x7f020007);
+					Champ.setImageResource(0x7f02000b);
 					current_champ = "Lee Sin";
 					// TODO Auto-generated method stub
 				}
@@ -216,7 +216,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Lucian");
 					champTitle.setText("The Purifier");
-					Champ.setImageResource(0x7f020009);
+					Champ.setImageResource(0x7f02000d);
 					current_champ = "Lucian";
 					// TODO Auto-generated method stub
 				}
@@ -254,7 +254,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Lulu");
 					champTitle.setText("The Fae Sorceress");
-					Champ.setImageResource(0x7f02000b);
+					Champ.setImageResource(0x7f02000f);
 					current_champ = "Lulu";
 					// TODO Auto-generated method stub
 				}
@@ -292,7 +292,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Syndra");
 					champTitle.setText("The Dark Sovereign");
-					Champ.setImageResource(0x7f02000d);
+					Champ.setImageResource(0x7f020012);
 					current_champ = "Syndra";
 					// TODO Auto-generated method stub
 				}
@@ -330,7 +330,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Varus");
 					champTitle.setText("The Arrow" +'\n'+"of Retribution");
-					Champ.setImageResource(0x7f02000f);
+					Champ.setImageResource(0x7f020014);
 					current_champ = "Varus";
 					// TODO Auto-generated method stub
 				}
@@ -368,7 +368,7 @@ public class Startscreen extends Activity {
 				else{
 					champName.setText("Vladimir");
 					champTitle.setText("The Crimson Reaper");
-					Champ.setImageResource(0x7f020011);
+					Champ.setImageResource(0x7f020017);
 					current_champ = "Vladimir";
 					// TODO Auto-generated method stub
 				}

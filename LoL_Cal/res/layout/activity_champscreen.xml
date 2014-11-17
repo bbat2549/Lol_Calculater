@@ -112,56 +112,68 @@
         android:text="Attack Dam:" />
 
     <Button
-        android:id="@+id/item1"
+        android:id="@+id/dblade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Range"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="19dp"
+        android:background="@drawable/dblade"
         android:minWidth="48dp" />
 
     <Button
-        android:id="@+id/item2"
+        android:id="@+id/dring"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/item1"
-        android:layout_toRightOf="@+id/item1"
+        android:layout_alignTop="@+id/dblade"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/dblade"
+        android:background="@drawable/dring"
         android:minWidth="48dp" />
 
     <Button
-        android:id="@+id/item3"
+        android:id="@+id/dshield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item2"
-        android:layout_alignBottom="@+id/item2"
-        android:layout_toRightOf="@+id/item2"
+        android:layout_alignBaseline="@+id/dring"
+        android:layout_alignBottom="@+id/dring"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/dring"
+        android:background="@drawable/dshield"
         android:minWidth="48dp" />
 
     <Button
-        android:id="@+id/item4"
+        android:id="@+id/BotRK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item3"
-        android:layout_alignBottom="@+id/item3"
-        android:layout_toRightOf="@+id/item3"
+        android:layout_alignBaseline="@+id/dshield"
+        android:layout_alignBottom="@+id/dshield"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/dshield"
+        android:background="@drawable/botrk"
         android:minWidth="48dp" />
 
     <Button
-        android:id="@+id/item5"
+        android:id="@+id/Randuins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item4"
-        android:layout_alignBottom="@+id/item4"
-        android:layout_toRightOf="@+id/item4"
+        android:layout_alignBaseline="@+id/BotRK"
+        android:layout_alignBottom="@+id/BotRK"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/BotRK"
+        android:background="@drawable/randuin"
         android:minWidth="48dp" />
 
     <Button
-        android:id="@+id/item6"
+        android:id="@+id/Visage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item5"
-        android:layout_alignBottom="@+id/item5"
-        android:layout_toRightOf="@+id/item5"
+        android:layout_alignBaseline="@+id/Randuins"
+        android:layout_alignBottom="@+id/Randuins"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/Randuins"
+        android:background="@drawable/visage"
         android:minWidth="48dp" />
 
 </RelativeLayout>
