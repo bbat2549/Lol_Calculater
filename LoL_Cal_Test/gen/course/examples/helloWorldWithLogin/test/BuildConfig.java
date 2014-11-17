@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.example.lol_cal.test;
+package course.examples.helloWorldWithLogin.test;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

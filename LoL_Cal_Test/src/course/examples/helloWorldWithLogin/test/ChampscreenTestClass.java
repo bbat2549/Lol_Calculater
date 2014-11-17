@@ -1,14 +1,15 @@
-package com.examples.lol_cal.test;
+package course.examples.helloWorldWithLogin.test;
 
 import com.robotium.solo.Solo;
 
 import android.test.ActivityInstrumentationTestCase2;
 import com.example.lol_cal.*;
-public class ChampscreenTestClass extends ActivityInstrumentationTestCase2<Startscreen> {
+
+public class ChampscreenTestClass extends ActivityInstrumentationTestCase2<Champscreen> {
 	private Solo solo;
 
 	public ChampscreenTestClass() {
-		super(Startscreen.class);
+		super(Champscreen.class);
 	}
 
 	public void setUp() throws Exception {
@@ -20,11 +21,10 @@ public class ChampscreenTestClass extends ActivityInstrumentationTestCase2<Start
 		solo.finishOpenedActivities();
 	}
 
-	public void testChampPress() throws Exception {
-		solo.assertCurrentActivity("wrong activity", Startscreen.class);
-		solo.clickOnButton(0);
-		solo.clickOnButton(0);
-		assertTrue(solo.waitForText("Karma"));
+	public void testNoInputLogin() throws Exception {
+		solo.assertCurrentActivity("wrong activity", Champscreen.class);
+		solo.clickOnButton("Login");
+		assertFalse(solo.waitForText("Hello Android"));
 	}
 	
 	
