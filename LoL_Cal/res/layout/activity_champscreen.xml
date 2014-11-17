@@ -109,59 +109,65 @@
         android:layout_alignBaseline="@+id/Heath"
         android:layout_alignBottom="@+id/Heath"
         android:layout_alignLeft="@+id/Champ_name"
+        android:layout_marginLeft="14dp"
         android:text="Attack Dam:" />
 
-    <Button
+    <ImageView
         android:id="@+id/item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/Range"
-        android:layout_marginTop="19dp"
-        android:minWidth="48dp" />
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/alert_light_frame" />
 
-    <Button
+    <ImageView
         android:id="@+id/item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/item1"
+        android:layout_marginLeft="0dp"
         android:layout_toRightOf="@+id/item1"
-        android:minWidth="48dp" />
+        android:src="@android:drawable/alert_light_frame" />
 
-    <Button
+    <ImageView
         android:id="@+id/item3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item2"
-        android:layout_alignBottom="@+id/item2"
+        android:layout_alignTop="@+id/item2"
         android:layout_toRightOf="@+id/item2"
-        android:minWidth="48dp" />
+        android:src="@android:drawable/alert_light_frame" />
 
-    <Button
-        android:id="@+id/item4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item3"
-        android:layout_alignBottom="@+id/item3"
-        android:layout_toRightOf="@+id/item3"
-        android:minWidth="48dp" />
-
-    <Button
+    <ImageView
         android:id="@+id/item5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item4"
-        android:layout_alignBottom="@+id/item4"
+        android:layout_alignTop="@+id/item4"
         android:layout_toRightOf="@+id/item4"
-        android:minWidth="48dp" />
+        android:src="@android:drawable/alert_light_frame" />
 
-    <Button
+    <ImageView
         android:id="@+id/item6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/item5"
-        android:layout_alignBottom="@+id/item5"
+        android:layout_alignTop="@+id/item5"
         android:layout_toRightOf="@+id/item5"
-        android:minWidth="48dp" />
+        android:src="@android:drawable/alert_light_frame" />
+
+    <ImageView
+        android:id="@+id/item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/item1"
+        android:src="@android:drawable/alert_light_frame" />
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item3"
+        android:layout_toRightOf="@+id/Armor"
+        android:text="Add Item" />
 
 </RelativeLayout>
