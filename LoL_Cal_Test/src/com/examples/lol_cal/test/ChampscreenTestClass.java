@@ -27,5 +27,19 @@ public class ChampscreenTestClass extends ActivityInstrumentationTestCase2<Start
 		assertTrue(solo.waitForText("Karma"));
 	}
 	
+	public void testItemPress() throws Exception {
+		solo.assertCurrentActivity("wrong activity", Startscreen.class);
+		solo.clickOnButton(0);
+		solo.clickOnButton(0);
+		solo.clickOnButton(0);
+		assertTrue(solo.waitForText("Attack Dam: 57.0"));
+	}
+	
+	public void testDifferentChampion() throws Exception {
+		solo.assertCurrentActivity("wrong activity", Startscreen.class);
+		solo.clickOnButton(0);
+		solo.clickOnButton(1);
+		assertFalse(solo.waitForText("Karma"));
+	}
 	
 }
